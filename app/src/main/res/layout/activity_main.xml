@@ -183,11 +183,12 @@
 
                 <ImageView
                     android:id="@+id/imageView1"
-                    android:layout_width="62dp"
+                    android:layout_width="70dp"
                     android:scaleType="fitCenter"
-                    android:layout_height="100dp"
+                    android:layout_height="110dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-21dp"
+                    android:layout_marginTop="-25dp"
+                    android:layout_marginStart="-5dp"
                     app:srcCompat="@drawable/bitkoin" />
 
 
@@ -484,7 +485,7 @@
                 class="androidx.appcompat.widget.Toolbar"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_gravity="center_vertical"
                 android:backgroundTint="@color/black"
                 app:cardCornerRadius="50dp"
@@ -492,11 +493,11 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="60dp"
-                    android:layout_height="85dp"
+                    android:layout_width="65dp"
+                    android:layout_height="90dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-13dp"
-
+                    android:layout_marginTop="-15dp"
+                    android:layout_marginStart="-3dp"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/pancakeswap" />
 
@@ -699,9 +700,9 @@
                 <ImageView
                     android:id="@+id/imageView6"
                     android:layout_width="60dp"
-                    android:layout_height="85dp"
+                    android:layout_height="90dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="-13dp"
+                    android:layout_marginTop="-15dp"
 
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/wisewintoken" />
