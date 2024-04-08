@@ -11,954 +11,976 @@
         android:layout_height="match_parent">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#F0F5F8"
-            android:backgroundTint="#F0F5F8"
-            android:foregroundTint="#F0F5F8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="731dp"
+        android:backgroundTint="#ECF3FB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view6"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0px"
+            android:backgroundTint="#ECF3FB"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view6"
+                android:id="@+id/avatar"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="0px"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="60dp"
+                    android:layout_height="86dp"
+                    android:scaleType="fitCenter"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-25dp"
+                    app:srcCompat="@drawable/man" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="Общий баланс"
+                android:textColor="#40506A"
+                android:textSize="11sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/textsum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:text="145 745,67$"
+                android:textColor="#40506A"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/textnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:text="+1768,25$(12,1%) за день"
+                android:textColor="#3CB4FF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewin"
+                class="androidx.appcompat.widget.Toolbar"
+                android:layout_width="240dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
                 android:backgroundTint="#ECF3FB"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="20dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="10dp">
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="60dp"
-                        android:layout_height="86dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="-25dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/man" />
-
-
-                </androidx.cardview.widget.CardView>
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="40dp"
-                    android:text="Общий баланс"
-                    android:textColor="#40506A"
-                    android:textSize="11sp"
-                    android:textStyle="bold"
-
-                    />
-
-                <TextView
-                    android:id="@+id/textsum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="55dp"
-                    android:text="145 745,67$"
-                    android:textColor="#40506A"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/textnum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="90dp"
-                    android:text="+1768,25$(12,1%) за день"
-                    android:textColor="#3CB4FF"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/viewin"
+                    android:id="@+id/viewin1"
                     class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="240dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="120dp"
-                    android:backgroundTint="#ECF3FB"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/viewin1"
-                        class="androidx.appcompat.widget.Toolbar"
-                        android:layout_width="120dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        android:backgroundTint="#D7E0EA"
-                        app:cardCornerRadius="50dp">
-
-                        <TextView
-                            android:id="@+id/textvnutri"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal|center_vertical"
-                            android:text="Активы"
-                            android:textColor="#3CB4FF"
-                            android:textSize="8sp"
-                            android:textStyle="bold"
-
-                            />
-                    </androidx.cardview.widget.CardView>
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="#D7E0EA"
+                    app:cardCornerRadius="50dp">
 
                     <TextView
-                        android:id="@+id/textvnutri2"
+                        android:id="@+id/textvnutri"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="160dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
                         android:text="Активы"
-                        android:textColor="#707A89"
+                        android:textColor="#3CB4FF"
                         android:textSize="8sp"
                         android:textStyle="bold"
 
                         />
                 </androidx.cardview.widget.CardView>
 
+                <TextView
+                    android:id="@+id/textvnutri2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="160dp"
+                    android:text="Активы"
+                    android:textColor="#707A89"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical" >
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
 
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
-            <!--  БИТКОИН              -->
+
+        <!--  БИТКОИН              -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view1"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="#ECF3FB"
+            >
+
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view1"
+                android:id="@+id/avatar1"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="180dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="62dp"
+                    android:scaleType="fitCenter"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-21dp"
+                    app:srcCompat="@drawable/bitkoin" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar1"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
-
-                    <ImageView
-                        android:id="@+id/imageView1"
-                        android:layout_width="70dp"
-                        android:layout_height="110dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginStart="-5dp"
-                        android:layout_marginTop="-25dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/bitkoin" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text11"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Bitkoin"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text12"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="0,014 BTC"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text13"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="36 187,43 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text14"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="+ 2,68 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#7E9E68"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text15"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="50,66 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
 
-            <!--  ЕЗЕРИУМ             -->
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:text="Bitkoin"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="15dp"
+                android:text="0,014 BTC"
+                android:textAlignment="textEnd"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="35dp"
+                android:text="36 187,43 $"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="35dp"
+                android:text="+ 2,68 %"
+                android:textAlignment="textStart"
+                android:textColor="#7E9E68"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="50,66 $"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--  ЕЗЕРИУМ             -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="253dp"
+            android:backgroundTint="#ECF3FB"
+            >
+
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view2"
+                android:id="@+id/avatar2"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="253dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="62dp"
+                    android:scaleType="fitCenter"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-21dp"
+                    app:srcCompat="@drawable/ethereum" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar2"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="62dp"
-                        android:layout_height="100dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="-21dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ethereum" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text21"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Etherium"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text22"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="0,052739 ETH"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text23"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="2 220,56 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text24"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="+ 4,45 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#7E9E68"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text25"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="117,11 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
 
-            <!--  СМАРТ ЧЭЙН            -->
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:text="Etherium"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="15dp"
+                android:text="0,052739 ETH"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text23"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:text="2 220,56 $"
+                android:layout_marginTop="35dp"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text24"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="150dp"
+                android:text="+ 4,45 %"
+                android:textColor="#7E9E68"
+                android:layout_marginTop="35dp"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text25"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="117,11 $"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <!--  СМАРТ ЧЭЙН            -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view3"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="336dp"
+            android:backgroundTint="#ECF3FB"
+            >
+
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view3"
+                android:id="@+id/avatar3"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="336dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
 
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="62dp"
+                    android:scaleType="fitCenter"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-21dp"
+                    app:srcCompat="@drawable/smartchain" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar3"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="62dp"
-                        android:layout_height="100dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="-21dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/smartchain" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text31"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Smart Chain"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text32"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="123,93463 BNB"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text33"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="306,82 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text34"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="+ 4,17 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#7E9E68"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text35"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="38 332,44 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
 
-            <!--  ПАНКЕЙКСВЭП            -->
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:text="Smart Chain"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text32"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="15dp"
+                android:text="123,93463 BNB"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text33"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="90dp"
+                android:text="306,82 $"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text34"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginStart="150dp"
+                android:text="+ 4,17 %"
+                android:textColor="#7E9E68"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text35"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="38 332,44 $"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <!--  ПАНКЕЙКСВЭП            -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view4"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="419dp"
+            android:backgroundTint="#ECF3FB"
+            >
+
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view4"
+                android:id="@+id/avatar4"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="419dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
 
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar4"
-                    class="androidx.appcompat.widget.Toolbar"
+                <ImageView
+                    android:id="@+id/imageView4"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
+                    android:layout_height="85dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-13dp"
 
-                    <ImageView
-                        android:id="@+id/imageView4"
-                        android:layout_width="65dp"
-                        android:layout_height="90dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginStart="-3dp"
-                        android:layout_marginTop="-15dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/pancakeswap" />
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/pancakeswap" />
 
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text41"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="PancakeSwap"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text42"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="4 382,323 CAKE"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text43"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="14,47 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text44"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="+ 5,78 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#7E9E68"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text45"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="63 412,21 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
 
-            <!--  <БИАНСЕ>            -->
+            <TextView
+                android:id="@+id/text41"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="PancakeSwap"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text42"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:text="4 382,323 CAKE"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text43"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="14,47 $"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text44"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="150dp"
+                android:text="+ 5,78 %"
+                android:textColor="#7E9E68"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text45"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="63 412,21 $"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--  <БИАНСЕ>            -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view5"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="502dp"
+            android:backgroundTint="#ECF3FB"
+            >
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view5"
+                android:id="@+id/avatar5"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="502dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar5"
-                    class="androidx.appcompat.widget.Toolbar"
+                <ImageView
+                    android:id="@+id/imageView5"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
+                    android:layout_height="85dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-13dp"
 
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="60dp"
-                        android:layout_height="85dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="-13dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/biance" />
 
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/biance" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text51"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Biance USD"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text52"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="8 253,32 BUSD"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text53"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="1,00 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text54"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="- 0,01 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#FF5F5F"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text55"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="8 253,32 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
 
 
-            <!--  <ВАЙС ВИН ТОКЕН>            -->
+            <TextView
+                android:id="@+id/text51"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="Biance USD"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text52"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:text="8 253,32 BUSD"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text53"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="1,00 $"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text54"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="35dp"
+                android:text="- 0,01 %"
+                android:textAlignment="textStart"
+                android:textColor="#FF5F5F"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text55"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="8 253,32 $"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--  <ВАЙС ВИН ТОКЕН>            -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view61"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="575dp"
+            android:backgroundTint="#ECF3FB"
+            >
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/view61"
+                android:id="@+id/avatar6"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="575dp"
-                android:backgroundTint="#ECF3FB">
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="40dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/avatar6"
-                    class="androidx.appcompat.widget.Toolbar"
+                <ImageView
+                    android:id="@+id/imageView6"
                     android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="20dp"
-                    android:backgroundTint="@color/black"
-                    app:cardCornerRadius="50dp"
-                    app:cardElevation="40dp">
+                    android:layout_height="85dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-13dp"
 
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="60dp"
-                        android:layout_height="90dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="-15dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/wisewintoken" />
 
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/wisewintoken" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <TextView
-                    android:id="@+id/text61"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="15dp"
-                    android:text="Wise Win Token"
-                    android:textAlignment="textStart"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text62"
-                    android:layout_width="185dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="15dp"
-                    android:text="26 954,49287345 WWT"
-                    android:textAlignment="textEnd"
-                    android:textColor="#40506A"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text63"
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="90dp"
-                    android:layout_marginTop="35dp"
-                    android:text="1,32 $"
-                    android:textAlignment="textStart"
-                    android:textColor="#969CA3"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text64"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="150dp"
-                    android:layout_marginTop="35dp"
-                    android:text="+5,31 %"
-                    android:textAlignment="textStart"
-                    android:textColor="#7E9E68"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/text65"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="295dp"
-                    android:layout_marginTop="35dp"
-                    android:text="35 579,93 $"
-                    android:textAlignment="textEnd"
-                    android:textColor="#3CB4FF"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
 
             </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/text61"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="Wise Win Token"
+                android:layout_marginTop="15dp"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text62"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="15dp"
+                android:text="26 954,49287345 WWT"
+                android:textColor="#40506A"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text63"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="90dp"
+                android:text="1,32 $"
+                android:textColor="#969CA3"
+                android:textSize="10sp"
+                android:layout_marginTop="35dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text64"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="35dp"
+                android:text="+5,31 %"
+                android:textAlignment="textStart"
+                android:textColor="#7E9E68"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/text65"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="35 579,93 $"
+                android:textAlignment="textEnd"
+                android:layout_marginLeft="295dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3CB4FF"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewniz"
+            class="androidx.appcompat.widget.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="650dp"
+            app:cardBackgroundColor="#F1F6F9">
+
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/viewniz"
+                android:id="@+id/viewmenu1"
                 class="androidx.appcompat.widget.Toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="650dp"
-                app:cardBackgroundColor="#F1F6F9">
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="#D3DEEF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp" >
+
+                <ImageView
+                    android:id="@+id/imageViewcartinka1"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/coshelek" />
 
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/viewmenu1"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="70dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="10dp"
-                    app:cardBackgroundColor="#D3DEEF"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewcartinka1"
-                        android:layout_width="25dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="-5dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/coshelek" />
-
-
-                    <TextView
-                        android:id="@+id/textmenu1"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="15dp"
-                        android:text="Кошелек"
-                        android:textAlignment="center"
-                        android:textColor="#3F4F69"
-                        android:textSize="8sp"
-                        android:textStyle="bold" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/viewmenu2"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="70dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="90dp"
-                    app:cardBackgroundColor="#EBF2FA"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewcartinka2"
-                        android:layout_width="25dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="-5dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/rost" />
-
-
-                    <TextView
-                        android:id="@+id/textmenu2"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="15dp"
-                        android:text="Рынок"
-                        android:textAlignment="center"
-                        android:textColor="#3F4F69"
-                        android:textSize="8sp"
-                        android:textStyle="bold" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/viewmenu3"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="70dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="170dp"
-                    app:cardBackgroundColor="#EBF2FA"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewcartinka3"
-                        android:layout_width="25dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="-5dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/brawser" />
-
-
-                    <TextView
-                        android:id="@+id/textmenu3"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="15dp"
-                        android:text="Бразуер"
-                        android:textAlignment="center"
-                        android:textColor="#3F4F69"
-                        android:textSize="8sp"
-                        android:textStyle="bold" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/viewmenu4"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="70dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="250dp"
-                    app:cardBackgroundColor="#EBF2FA"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewcartinka4"
-                        android:layout_width="25dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="-5dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/change" />
-
-
-                    <TextView
-                        android:id="@+id/textmenu4"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="15dp"
-                        android:text="Обмен"
-                        android:textAlignment="center"
-                        android:textColor="#3F4F69"
-                        android:textSize="8sp"
-                        android:textStyle="bold" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/viewmenu5"
-                    class="androidx.appcompat.widget.Toolbar"
-                    android:layout_width="70dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="330dp"
-                    app:cardBackgroundColor="#EBF2FA"
-                    app:cardCornerRadius="20dp"
-                    app:cardElevation="20dp">
-
-                    <ImageView
-                        android:id="@+id/imageViewcartinka5"
-                        android:layout_width="25dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="-5dp"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/settings" />
-
-
-                    <TextView
-                        android:id="@+id/textmenu5"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|center_horizontal"
-                        android:layout_marginTop="15dp"
-                        android:text="Настройка"
-                        android:textAlignment="center"
-                        android:textColor="#3F4F69"
-                        android:textSize="8sp"
-                        android:textStyle="bold" />
-
-
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/textmenu1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Кошелек"
+                    android:textAlignment="center"
+                    android:textColor="#3F4F69"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:textSize="8sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold" />
 
 
             </androidx.cardview.widget.CardView>
 
 
-        </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewmenu2"
+                class="androidx.appcompat.widget.Toolbar"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                app:cardBackgroundColor="#EBF2FA"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageViewcartinka2"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/rost" />
+
+
+                <TextView
+                    android:id="@+id/textmenu2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Рынок"
+                    android:textAlignment="center"
+                    android:textColor="#3F4F69"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewmenu3"
+                class="androidx.appcompat.widget.Toolbar"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="170dp"
+                app:cardBackgroundColor="#EBF2FA"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageViewcartinka3"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/brawser" />
+
+
+                <TextView
+                    android:id="@+id/textmenu3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Бразуер"
+                    android:textAlignment="center"
+                    android:textColor="#3F4F69"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewmenu4"
+                class="androidx.appcompat.widget.Toolbar"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="250dp"
+                app:cardBackgroundColor="#EBF2FA"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageViewcartinka4"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/change" />
+
+
+                <TextView
+                    android:id="@+id/textmenu4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Обмен"
+                    android:textAlignment="center"
+                    android:textColor="#3F4F69"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewmenu5"
+                class="androidx.appcompat.widget.Toolbar"
+                android:layout_width="70dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="330dp"
+                app:cardBackgroundColor="#EBF2FA"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <ImageView
+                    android:id="@+id/imageViewcartinka5"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/settings" />
+
+
+                <TextView
+                    android:id="@+id/textmenu5"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="Настройка"
+                    android:textAlignment="center"
+                    android:textColor="#3F4F69"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
